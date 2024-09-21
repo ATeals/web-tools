@@ -1,0 +1,43 @@
+{
+  "name": "nextra-docs-template",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Nextra docs template",
+  "scripts": {
+    "dev": "next dev",
+    "build": "pnpm run prebuild && next build && pnpm run postbuild",
+    "start": "next start",
+    "prebuild": "rm -rf pages && tsx ./.scripts/index.ts",
+    "postbuild": "rm -rf .next/cache",
+    "docs": "rm -rf pages && tsx ./.scripts/index.ts && next build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+  },
+  "author": "Shu Ding <g@shud.in>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shuding/nextra-docs-template/issues"
+  },
+  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "dependencies": {
+    "geist": "^1.3.0",
+    "next": "^13.0.6",
+    "next-sitemap": "^4.2.3",
+    "nextra": "latest",
+    "nextra-theme-docs": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remark-callout": "^1.1.1",
+    "remark-gfm": "^4.0.0",
+    "tsx": "^4.16.0",
+    "globby": "^11.1.0",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.10",
+    "@types/react": "^18.3.2",
+    "typescript": "^4.9.3"
+  }
+}
