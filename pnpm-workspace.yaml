@@ -1,6 +1,6 @@
 packages:
-  - 'docs'
-  - 'shared'
+  - 'documents'
+  - 'shared/**/*'
   - 'frontend'
   - 'frontend/**/*'
   - 'backend'
